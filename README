@@ -1,9 +1,9 @@
-FaceBrute 
-Facebook brute force script 
+MailBrute 
+Mail brute force script 
 
-This script tries to guess passwords for a given facebook
+This script tries to guess passwords for a given mail
 account using a list of passwords (dictionary).
-Since facebook temporaly blocks access to accounts that 
+Since gmail temporaly blocks access to accounts that 
 continously fail to login, this script is coded so
 that it waits a specified amount of time when this happens
 until the lock on the account is released.
@@ -25,4 +25,4 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Usage:
 
-facebrute.py -u username -p passdb.list [-e encoding] [-P proxy:port]
+mailbrute.py -u username -p passdb.list [-e encoding] [-P proxy:port]
