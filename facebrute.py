@@ -1,12 +1,12 @@
 #!/usr/bin/env python2
 # coding: utf-8
 #
-# FaceBrute
-# Facebook brute force script 
+# MailBrute
+# Mail brute force script 
 #
-# This script tries to guess passwords for a given facebook
+# This script tries to guess passwords for a given mail
 # account using a list of passwords (dictionary).
-# Since facebook temporaly blocks access to accounts that 
+# Since gmail temporaly blocks access to accounts that 
 # continously fail to login, this script is coded so
 # that it waits a specified amount of time when this happens
 # until the lock on the account is released.
@@ -25,7 +25,7 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-__author__ = "emerino <donvodka@gmail.com>"
+__author__ = "theprofhacker <thehacker>"
 __version__ = "0.3"
 
 import time
@@ -152,12 +152,12 @@ def parse_args(argv):
     return error, options
 
 def usage():
-    print """Facebook Brute Forcer v{0}
+    print """Mail Brute Forcer v{0}
 
 
 Usage:
 
-facebrute.py -u email -p passdb.list [-e encoding] [-P proxy:port]""".format(__version__)
+mailbrute.py -u email -p passdb.list [-e encoding] [-P proxy:port]""".format(__version__)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
